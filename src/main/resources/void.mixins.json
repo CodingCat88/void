@@ -2,7 +2,11 @@
 	"required": true,
 	"package": "coding.cat.voidmod.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [],
+	"mixins": [
+		"ServerPlayNetworkHandlerMixin",
+		"ServerPlayerInteractionManagerMixin",
+		"VoidItemEntityMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},
