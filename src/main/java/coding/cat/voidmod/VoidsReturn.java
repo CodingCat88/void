@@ -1,6 +1,7 @@
 package coding.cat.voidmod;
 
 import coding.cat.voidmod.events.OnPlayerDeath;
+import coding.cat.voidmod.events.VoidLayerRestrictions;
 import coding.cat.voidmod.item.VoidItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,6 +24,8 @@ public class VoidsReturn implements ModInitializer {
 		LOGGER.info("Did you hear the word?");
 		VoidItems.hi();
 		ServerPlayerEvents.ALLOW_DEATH.register(new OnPlayerDeath());
+		OnPlayerDeath.register();
+		VoidLayerRestrictions.register();
 	}
 
 	public static Identifier id(String path) {
