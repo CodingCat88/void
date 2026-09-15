@@ -1,8 +1,10 @@
 package coding.cat.voidmod;
 
+import coding.cat.voidmod.events.OnPlayerDeath;
 import coding.cat.voidmod.item.VoidItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -20,6 +22,7 @@ public class VoidsReturn implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Did you hear the word?");
 		VoidItems.hi();
+		ServerPlayerEvents.ALLOW_DEATH.register(new OnPlayerDeath());
 	}
 
 	public static Identifier id(String path) {
