@@ -2,9 +2,7 @@
 	"required": true,
 	"package": "coding.cat.voidmod.client.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
+	"client": [],
 	"injectors": {
 		"defaultRequire": 1
 	},
