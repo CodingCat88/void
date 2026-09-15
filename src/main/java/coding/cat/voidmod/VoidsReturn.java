@@ -1,5 +1,6 @@
 package coding.cat.voidmod;
 
+import coding.cat.voidmod.item.VoidItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -18,7 +19,7 @@ public class VoidsReturn implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Did you hear the word?");
-
+		VoidItems.hi();
 	}
 
 	public static Identifier id(String path) {
