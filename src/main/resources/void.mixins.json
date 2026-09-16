@@ -3,9 +3,10 @@
 	"package": "coding.cat.voidmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ServerPlayNetworkHandlerMixin",
-		"ServerPlayerInteractionManagerMixin",
-		"VoidItemEntityMixin"
+		"VoidLayerInteractionRangeMixin",
+		"VoidLayerItemEntityMixin",
+		"VoidLayerPlayerMixin",
+		"VoidLayerDamageMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
