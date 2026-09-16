@@ -33,6 +33,7 @@ public class OnPlayerDeath implements ServerPlayerEvents.AllowDeath {
 
                         if (component.inLayer) {
                             component.inLayer = false;
+                            VoidComponents.PLAYER.sync(player);
                         }
                     }
 
@@ -55,6 +56,8 @@ public class OnPlayerDeath implements ServerPlayerEvents.AllowDeath {
 
             if (!component.inLayer) {
                 component.inLayer = true;
+
+                VoidComponents.PLAYER.sync(player);
 
                 // Start the 30 second countdown
                 countdowns.put(player.getUuid(), COUNTDOWN_TICKS);
