@@ -1,6 +1,3 @@
 {
-  "parent":"minecraft:cube_all",
-  "textures": {
-    "all": "void:block/voidstone"
-  }
+  "parent": "void:block/voidstone"
 }
