@@ -2,6 +2,6 @@
   "item.void.totem_of_null": "Totem of Null",
 
 
-  "item.void.voidstone": "Void Stone Block",
-  "item.void.voidalter": "Void Stone Alter Block"
+  "block.void.voidstone": "Void Stone Block",
+  "block.void.voidaltar": "Void Stone Altar Block"
 }

@@ -18,12 +18,12 @@ public class VoidBlocks {
             new Block(AbstractBlock.Settings.create().strength(4.0F)
                     .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
-    public static final Block VOIDALTER = registerBlock("voidalter",
+    public static final Block VOIDALTAR = registerBlock("voidaltar",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
                     .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
     private static Block registerBlock(String name, Block block) {
-        registerBlock(name, block);
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VoidsReturn.MOD_ID, name), block);
     }
     private static void registerBlockItem(String  name, Block block) {
@@ -36,7 +36,7 @@ public class VoidBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(VoidBlocks.VOIDSTONE);
-            fabricItemGroupEntries.add(VoidBlocks.VOIDALTER);
+            fabricItemGroupEntries.add(VoidBlocks.VOIDALTAR);
         });
     }
 }
