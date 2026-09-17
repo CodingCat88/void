@@ -8,8 +8,7 @@
   "fragment": "void:void_layer",
   "attributes": [ "Position" ],
   "samplers": [
-    { "name": "DiffuseSampler" },
-    { "name": "DiffuseDepthSampler" }
+    { "name": "DiffuseSampler" }
   ],
   "uniforms": [
     {
