@@ -23,7 +23,7 @@ public class VoidBlocks {
                     .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
     private static Block registerBlock(String name, Block block) {
-        registerBlock(name, block);
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VoidsReturn.MOD_ID, name), block);
     }
     private static void registerBlockItem(String  name, Block block) {

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 2000,
+  "ingredient": {
+    "item": "void:raw_voidsteel"
+  },
+  "result": {
+    "id": "void:voidsteel_ingot"
+  }
+}

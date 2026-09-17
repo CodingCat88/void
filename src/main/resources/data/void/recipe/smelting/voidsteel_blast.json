@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 2,
+  "cookingtime": 1000,
+  "ingredient": {
+    "item": "void:raw_voidsteel"
+  },
+  "result": {
+    "id": "void:voidsteel_ingot"
+  }
+}

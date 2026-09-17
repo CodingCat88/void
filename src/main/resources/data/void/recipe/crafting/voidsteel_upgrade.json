@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "#N#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "void:voidsteel_ingot"
+    },
+    "R": {
+      "item": "void:raw_voidsteel"
+    },
+    "N": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "id": "void:voidsteel_upgrade_template"
+  }
+}

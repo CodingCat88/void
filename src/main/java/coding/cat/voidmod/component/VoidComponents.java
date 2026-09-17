@@ -14,6 +14,6 @@ public class VoidComponents implements EntityComponentInitializer {
 
     @Override
     public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {
-        registry.registerForPlayers(PLAYER, VoidPlayerComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
+        registry.registerForPlayers(PLAYER, player -> new VoidPlayerComponent(), RespawnCopyStrategy.ALWAYS_COPY);
     }
 }
