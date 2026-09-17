@@ -1,5 +1,6 @@
 package coding.cat.voidmod;
 
+import coding.cat.voidmod.block.VoidBlocks;
 import coding.cat.voidmod.events.OnPlayerDeath;
 import coding.cat.voidmod.events.VoidLayerRestrictions;
 import coding.cat.voidmod.item.VoidItems;
@@ -26,6 +27,7 @@ public class VoidsReturn implements ModInitializer {
 		ServerPlayerEvents.ALLOW_DEATH.register(new OnPlayerDeath());
 		OnPlayerDeath.register();
 		VoidLayerRestrictions.register();
+		VoidBlocks.registerVoidBlocks();
 	}
 
 	public static Identifier id(String path) {
