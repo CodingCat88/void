@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " # ",
+    "R  "
+  ],
+  "key": {
+    "#": {
+      "item": "void:voidsteel"
+    },
+    "R": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "void:voidsteel_upgrade_template"
+  }
+}
