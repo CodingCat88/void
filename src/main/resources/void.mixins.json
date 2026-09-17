@@ -3,11 +3,12 @@
   "package": "coding.cat.voidmod.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "MobEntityMixin",
-    "VoidLayerDamageMixin",
-    "VoidLayerInteractionRangeMixin",
-    "VoidLayerItemEntityMixin",
-    "VoidLayerPlayerMixin"
+	  "MobEntityMixin",
+	  "VoidLayerDamageMixin",
+	  "VoidLayerInteractionRangeMixin",
+	  "VoidLayerItemEntityMixin",
+	  "VoidLayerPlayerMixin",
+	  "VoidLayerItemUseMixin"
   ],
   "injectors": {
     "defaultRequire": 1
