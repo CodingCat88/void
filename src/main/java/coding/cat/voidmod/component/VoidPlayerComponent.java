@@ -1,6 +1,5 @@
 package coding.cat.voidmod.component;
 
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
@@ -8,10 +7,8 @@ import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 public class VoidPlayerComponent implements AutoSyncedComponent {
 
     public boolean inLayer = false;
-    private final PlayerEntity player;
 
-    public VoidPlayerComponent(PlayerEntity player) {
-        this.player = player;
+    public VoidPlayerComponent() {
         this.inLayer = false;
     }
 
