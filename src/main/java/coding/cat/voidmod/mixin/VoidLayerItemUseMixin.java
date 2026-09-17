@@ -28,7 +28,7 @@ public abstract class VoidLayerItemUseMixin {
             CallbackInfoReturnable<ActionResult> cir
     ) {
         if (VoidLayerRestrictions.isInLayer(player)) {
-            cir.setReturnValue(ActionResult.PASS);
+            cir.setReturnValue(ActionResult.FAIL);
         }
     }
 }
