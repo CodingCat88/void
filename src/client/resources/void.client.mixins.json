@@ -3,7 +3,8 @@
   "package": "coding.cat.voidmod.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "EntityRenderDispatcherMixin"
+    "EntityRenderDispatcherMixin",
+    "VoidLayerClientPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
