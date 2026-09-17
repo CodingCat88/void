@@ -39,6 +39,18 @@ public class VoidItems {
             entries.add(RAW_VOIDSTEEL);
             entries.add(VOIDSTEEL_UPGRADE_TEMPLATE);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(VOIDSTEEL_SWORD);
+            entries.add(VOIDSTEEL_AXE);
+            entries.add(VOIDSTEEL_MACE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(VOIDSTEEL_PICKAXE);
+            entries.add(VOIDSTEEL_SHOVEL);
+            entries.add(VOIDSTEEL_HOE);
+        });
     }
 
     private static Item registerItem(String name, Item item) {
