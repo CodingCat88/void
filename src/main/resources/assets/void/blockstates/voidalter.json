@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "void:block/voidalter"
+      "model": "void:block/voidaltar"
     }
   }
 }
