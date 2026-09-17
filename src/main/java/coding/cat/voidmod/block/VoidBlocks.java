@@ -27,7 +27,7 @@ public class VoidBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(VoidsReturn.MOD_ID, name), block);
     }
     private static void registerBlockItem(String  name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.tryParse(name),
+        Registry.register(Registries.ITEM, Identifier.tryParse(VoidsReturn.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
