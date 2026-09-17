@@ -5,14 +5,16 @@
   "item.void.raw_voidsteel": "Raw Voidsteel",
   "item.void.voidsteel_upgrade_template": "Voidsteel Upgrade Template",
 
-  "item.void.voidsteel_sword": "Voidsteel Sword",
-  "item.void.voidsteel_pickaxe": "Voidsteel Pickaxe",
-  "item.void.voidsteel_axe": "Voidsteel Axe",
-  "item.void.voidsteel_shovel": "Voidsteel Shovel",
-  "item.void.voidsteel_hoe": "Voidsteel Hoe",
+  "item.void.voidsteel_sword": "VoidSteel Sword",
+  "item.void.voidsteel_pickaxe": "VoidSteel Pickaxe",
+  "item.void.voidsteel_axe": "VoidSteel Axe",
+  "item.void.voidsteel_shovel": "VoidSteel Shovel",
+  "item.void.voidsteel_hoe": "VoidSteel Hoe",
 
-  "item.void.voidsteel_mace": "Voidsteel Mace",
+  "item.void.voidsteel_mace": "VoidSteel Mace",
 
-  "block.void.voidstone": "Void Stone Block",
-  "block.void.voidaltar": "Void Stone Altar Block"
+  "block.void.voidstone": "VoidStone Block",
+  "block.void.voidaltar": "VoidStone Altar Block",
+  "block.void.voidsteel": "VoidSteel Block",
+  "block.void.rawvoidsteel": "Raw VoidSteel Block"
 }
