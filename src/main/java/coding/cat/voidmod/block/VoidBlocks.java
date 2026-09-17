@@ -14,10 +14,13 @@ import net.minecraft.util.Identifier;
 
 public class VoidBlocks {
 
-    public static final Block VOID_STONE = registerBlock("void_stone",
+    public static final Block VOIDSTONE = registerBlock("voidstone",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
                     .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
+    public static final Block VOIDALTER = registerBlock("voidalter",
+            new Block(AbstractBlock.Settings.create().strength(4.0F)
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlock(name, block);
@@ -32,7 +35,8 @@ public class VoidBlocks {
         VoidsReturn.LOGGER.info("Registering VoidBlocks For" + VoidsReturn.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(VoidBlocks.VOID_STONE);
+            fabricItemGroupEntries.add(VoidBlocks.VOIDSTONE);
+            fabricItemGroupEntries.add(VoidBlocks.VOIDALTER);
         });
     }
 }

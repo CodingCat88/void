@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "void:item/totem"
-  }
+  "parent": "void:block/voidstone"
 }
