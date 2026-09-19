@@ -45,6 +45,10 @@ public class OnPlayerDeath implements ServerPlayerEvents.AllowDeath {
         });
     }
 
+    public static void removeCountdown(UUID uuid) {
+        countdowns.remove(uuid);
+    }
+
     @Override
     public boolean allowDeath(ServerPlayerEntity player, DamageSource damageSource, float v) {
         if (player.getInventory().contains(new ItemStack(VoidItems.NULL_TOTEM))) {
