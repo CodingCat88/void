@@ -1,6 +1,8 @@
 package coding.cat.voidmod;
 
 import coding.cat.voidmod.block.VoidBlocks;
+import coding.cat.voidmod.chat.LayerChatHandler;
+import coding.cat.voidmod.command.DebugCommand;
 import coding.cat.voidmod.events.OnPlayerDeath;
 import coding.cat.voidmod.events.VoidLayerRestrictions;
 import coding.cat.voidmod.item.VoidItems;
@@ -28,6 +30,8 @@ public class VoidsReturn implements ModInitializer {
 		OnPlayerDeath.register();
 		VoidLayerRestrictions.register();
 		VoidBlocks.registerVoidBlocks();
+		DebugCommand.register();
+		LayerChatHandler.register();
 	}
 
 	public static Identifier id(String path) {
