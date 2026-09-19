@@ -16,19 +16,19 @@ public class VoidBlocks {
 
     public static final Block VOIDSTONE = registerBlock("voidstone",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block VOIDALTAR = registerBlock("voidaltar",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block VOIDSTEEL = registerBlock("voidsteel",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block RAWVOIDSTEEL = registerBlock("rawvoidsteel",
             new Block(AbstractBlock.Settings.create().strength(4.0F)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
