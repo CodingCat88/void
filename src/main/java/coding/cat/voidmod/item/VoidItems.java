@@ -19,7 +19,8 @@ public class VoidItems {
     public static final Item VOIDSTEEL_UPGRADE_TEMPLATE = registerItem("voidsteel_upgrade_template", new Item(new Item.Settings()));
 
     public static final Item VOIDSTEEL_SWORD = registerItem("voidsteel_sword", new SwordItem(VoidToolMaterials.VOID_STEEL,
-            new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(VoidToolMaterials.VOID_STEEL, 3, -2.4f))));
+            new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(VoidToolMaterials.VOID_STEEL, 3, -2.4f))));
     public static final Item VOIDSTEEL_PICKAXE = registerItem("voidsteel_pickaxe", new PickaxeItem(VoidToolMaterials.VOID_STEEL,
             new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(VoidToolMaterials.VOID_STEEL, 1, -2.8f))));
     public static final Item VOIDSTEEL_AXE = registerItem("voidsteel_axe", new AxeItem(VoidToolMaterials.VOID_STEEL,
