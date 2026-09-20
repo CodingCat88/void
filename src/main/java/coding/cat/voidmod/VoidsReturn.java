@@ -33,7 +33,6 @@ public class VoidsReturn implements ModInitializer {
 		VoidBlocks.registerVoidBlocks();
 		DebugCommand.register();
 		LayerChatHandler.register();
-		VoidLayerCommand.register();
 	}
 
 	public static Identifier id(String path) {
