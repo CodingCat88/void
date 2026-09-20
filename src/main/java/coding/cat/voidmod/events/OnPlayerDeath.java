@@ -19,6 +19,8 @@ public class OnPlayerDeath implements ServerPlayerEvents.AllowDeath {
     private static final Map<UUID, Integer> countdowns = new HashMap<>();
 
     public static void register() {
+        LayerKeybindEvent.CAN_EXIT_LAYER.register(player -> !countdowns.containsKey(player.getUuid()));
+
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             countdowns.replaceAll((uuid, ticks) -> ticks - 1);
 

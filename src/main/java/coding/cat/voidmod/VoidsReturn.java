@@ -6,6 +6,7 @@ import coding.cat.voidmod.command.DebugCommand;
 import coding.cat.voidmod.events.OnPlayerDeath;
 import coding.cat.voidmod.events.VoidLayerRestrictions;
 import coding.cat.voidmod.item.VoidItems;
+import coding.cat.voidmod.networking.VoidNetworking;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
@@ -32,6 +33,7 @@ public class VoidsReturn implements ModInitializer {
 		VoidBlocks.registerVoidBlocks();
 		DebugCommand.register();
 		LayerChatHandler.register();
+		VoidNetworking.register();
 	}
 
 	public static Identifier id(String path) {

@@ -16,5 +16,8 @@
   "block.void.voidstone": "VoidStone Block",
   "block.void.voidaltar": "VoidStone Altar Block",
   "block.void.voidsteel": "VoidSteel Block",
-  "block.void.rawvoidsteel": "Raw VoidSteel Block"
+  "block.void.rawvoidsteel": "Raw VoidSteel Block",
+
+  "key.categories.void": "???",
+  "key.void.exit_layer": "???"
 }
