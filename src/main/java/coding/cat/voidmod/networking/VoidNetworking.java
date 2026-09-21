@@ -26,7 +26,7 @@ public final class VoidNetworking {
                     }
 
                     if (!LayerKeybindEvent.CAN_EXIT_LAYER.invoker().canExit(player)) {
-                        player.sendMessage(Text.literal("You can't escape"), true);
+                        player.sendMessage(Text.literal("You can't run"), true);
                         return;
                     }
 
