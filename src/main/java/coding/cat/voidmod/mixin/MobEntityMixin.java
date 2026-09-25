@@ -2,6 +2,7 @@ package coding.cat.voidmod.mixin;
 
 import coding.cat.voidmod.component.VoidComponents;
 import coding.cat.voidmod.component.VoidPlayerComponent;
+import coding.cat.voidmod.events.IgnoresBlindness;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,6 +16,11 @@ public class MobEntityMixin {
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
     private void void$entitysDontSee(CallbackInfo info) {
         MobEntity mob = (MobEntity)(Object)this;
+
+        if (mob instanceof IgnoresBlindness) {
+            return;
+        }
+
         if (mob.getTarget() instanceof PlayerEntity hidden) {
             if (((VoidPlayerComponent)hidden.getComponent(VoidComponents.PLAYER)).inLayer) {
                 mob.setTarget(null);

@@ -20,7 +20,7 @@ public class VoidLayerRestrictions {
 
             if (entity instanceof net.minecraft.server.network.ServerPlayerEntity player) {
 
-                if (isInLayer(player)) {
+                if (isInLayer(player) && !(source.getAttacker() instanceof IgnoresBlindness)) {
                     return false;
                 }
             }

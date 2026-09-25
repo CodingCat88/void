@@ -7,5 +7,6 @@ public class VoidsReturnClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		VoidShaderEffect.register();
 		LayerExitKeybind.register();
+		VoidEntityRenderers.register();
 	}
 }

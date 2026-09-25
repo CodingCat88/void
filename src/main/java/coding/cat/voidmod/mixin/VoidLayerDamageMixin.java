@@ -1,5 +1,6 @@
 package coding.cat.voidmod.mixin;
 
+import coding.cat.voidmod.events.IgnoresBlindness;
 import coding.cat.voidmod.events.VoidLayerRestrictions;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -25,7 +26,8 @@ public abstract class VoidLayerDamageMixin {
         LivingEntity entity = (LivingEntity) (Object) this;
 
         if (entity instanceof PlayerEntity player
-                && VoidLayerRestrictions.isInLayer(player)) {
+                && VoidLayerRestrictions.isInLayer(player)
+                && !(source.getAttacker() instanceof IgnoresBlindness)) {
             cir.setReturnValue(false);
         }
     }

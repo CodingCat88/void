@@ -5,6 +5,7 @@
   "client": [
     "EntityRenderDispatcherMixin",
     "VoidLayerClientPlayerMixin",
+    "WatcherTransparentMixin",
     "WorldRendererSkyMixin"
   ],
   "injectors": {
